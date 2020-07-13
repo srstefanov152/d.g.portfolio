@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style>
+            body {
+                background-color: #e2e2e2;
+            }
+
+            .carousel-indicators {
+                position: relative !important;
+            }
+
+            .carousel-inner {
+                display: flex;
+                align-items: center;
+                height: 650px !important;
+                width: 500px !important;
+                margin: 0 auto;
+            }
+
+            .carousel-inner .w-100 {
+                /* float: left; */
+                /* width: 500px !important;
+                height: 700px !important; */
+                /* width: 70% !important; */
+                object-fit: cover;
+                margin: 0 auto;
+            }
+
+            .large {
+                width: 80% !important;
+                margin: 0 auto;
+            }
+
+            p {
+                text-align: center;
+                margin-top: 20px;
+                font-weight: bold;
+            }
+
+            #self{
+                width: 100%;
+            }
+
+            i { padding: 10px; }
+
+            @font-face {
+                font-family: "Roboto";
+                src: URL("fonts/roboto/Roboto-Regular.ttf") format("truetype");
+            }
+
+            .info{
+                font-family: "Roboto";
+            }
+
+            h6{
+                font-size: 18px;
+                width: 80%;
+                padding-left: 10px;
+            }
+
+            hr { margin: 60px; }
+        </style>
+    </head>
+    <body>
+        <div class="container my-4">
+            <!--Carousel Wrapper-->
+            <div
+                id="carousel-thumb"
+                class="carousel slide carousel-fade carousel-thumbnails"
+            >
+                <!--Slides-->
+                <div
+                    class="carousel-inner"
+                    role="listbox"
+                    ride="false"
+                    interval="999999999999999"
+                >
+                    <div class="carousel-item active">
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/Akrilna_Boq_Kosmichesko_Putuvane.JPG"
+                        />
+                        <p>Акрлина боя, "Космическо Пътуване"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100 large"
+                            src="img/deni/Akrilna_Boq_Put_Kum_Raq.JPG"
+                        />
+                        <p>Акрлина боя, "Път към Рая"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/Akvarale_Suh_Pastel_Preplitane.JPG"
+                        />
+                        <p>Акварел, сух пастел, "Преплитане"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/Akvarale_Suh_Pastel_Sblusuk.JPG"
+                        />
+                        <p>Акварел, сух пастел, "Сблъсък"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/Akvarale_Suh_Pastel_Vzrivqvane.JPG"
+                        />
+                        <p>Акварел, сух пастел, "Взривяване"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100 large"
+                            src="img/deni/Masleni_Boi_Mandarina.JPG"
+                        />
+                        <p>Маслени бои, "Мандарина"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100 large"
+                            src="img/deni/Masleni_Boi_Peizaj.jpg"
+                        />
+                        <p>Маслени бои, "Пейзаж"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100 large"
+                            src="img/deni/Masleni_Boi_Psihoanaliza.JPG"
+                        />
+                        <p>Маслени бои, "Психоанализа"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100 large"
+                            src="img/deni/Masleni_Boi_Smirenie.jpg"
+                        />
+                        <p>Маслени бои, "Смирение"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/Masleni_Boi_Videnie.JPG"
+                        />
+                        <p>Маслени бои, "Видение"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100 large"
+                            src="img/deni/Molivi_Grafit_Portret.JPG"
+                        />
+                        <p>Молив, графит, "Портрет"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100 large"
+                            src="img/deni/Molivi_Grafit_Portret2.JPG"
+                        />
+                        <p>Молив, графит, "Портрет"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/Peizaj_Pojar.JPG"
+                        />
+                        <p>Пейзаж, "Пожар"</p>
+                    </div>
+                    <div class="carousel-item large">
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/Portreti_Siluieti.JPG"
+                        />
+                        <p>Портрет, "Силуети"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/Vodna_Boq_Mikroelementi.JPG"
+                        />
+                        <p>Водна боя, "Микроелементи"</p>
+                    </div>
+                </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a
+                    class="carousel-control-prev"
+                    href="#carousel-thumb"
+                    role="button"
+                    data-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a
+                    class="carousel-control-next"
+                    href="#carousel-thumb"
+                    role="button"
+                    data-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+                <ol class="carousel-indicators">
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="0"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Akrilna_Boq_Kosmichesko_Putuvane_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="1"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Akrilna_Boq_Put_Kum_Raq_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="2"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Akvarale_Suh_Pastel_Preplitane_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="3"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Akvarale_Suh_Pastel_Sblusuk_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="4"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Akvarale_Suh_Pastel_Vzrivqvane_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="5"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Masleni_Boi_Mandarina_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="6"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Masleni_Boi_Peizaj_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="7"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Masleni_Boi_Psihoanaliza_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="8"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Masleni_Boi_Smirenie_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="9"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Masleni_Boi_Videnie_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="10"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Molivi_Grafit_Portret_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="11"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Molivi_Grafit_Portret2_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="12"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Peizaj_Pojar_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="13"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Portreti_Siluieti_tn.jpg"
+                        />
+                    </li>
+                    <li
+                        data-target="#carousel-thumb"
+                        data-slide-to="14"
+                        class="active"
+                    >
+                        <img
+                            class="d-block w-100"
+                            src="img/deni/thumbnails/Vodna_Boq_Mikroelementi_tn.jpg"
+                        />
+                    </li>
+                </ol>
+
+                <hr />
+            </div>
+            <!--/.Carousel Wrapper-->
+            <!-- Info -->
+            <div class="row">          
+                <div class="row">
+                    <div class="col-md-6 info">
+                        <h1>Деница Георгиева</h1>
+                        <h4>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>Варна, България
+                        </h4>
+                        <h5>
+                        <i class="fa fa-phone" aria-hidden="true"></i>0882 752 520
+                        </h5>
+                        <h5>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>denitsageorge@abv.bg
+                        </h5>
+                        <h6>Завършила съм в Национално училище за хуманитарни науки и изкуства “ Константин Преславски”-Варна с профил рисуване и живопис.</h6>
+                    </div>
+            
+                    <div class="col-md-6">
+                        <img id="self" src="img/deni/176EFF419-0C49-40EC-9EA7-6D46A45D6C63.jpeg" />
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- /Info -->
+        </div>
+    </body>
+</html>
